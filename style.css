@@ -1,14 +1,19 @@
 body {
-    font-family: "Poppins", "Segoe UI", sans-serif;
+    font-family: "Poppins", "Segoe UI", Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #1b1a17;
-    color: #f3e9dc;
+    background-color: #f3eee8; 
+    color: #2e2b29; 
 }
 
-header {
-    background-color: #2e1f18;
-    padding: 15px 0;
+
+header, .header {
+    background-color: #2c1a11; 
+    color: #f3eee8;
+    padding: 1.5rem 0;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
@@ -86,14 +91,143 @@ header {
     font-size: 1.1rem;
 }
 
-footer {
-    background-color: #2e1f18;
-    color: #f3e9dc;
+.contacts-section {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contacts-left, .contacts-right {
+    flex: 1 1 300px;
+}
+
+.contacts-left {
+    background: #fffdf9;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(44, 26, 17, 0.15);
+    border: 1px solid #cbb89d;
+}
+
+.contacts-left h2 {
+    color: #3b2a20;
+    margin-bottom: 1rem;
+}
+
+.contacts-left ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contacts-left li {
+    margin-bottom: 0.6rem;
+}
+
+.contact-info p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.contacts-right .collaboration {
+    background: #fffdf9;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(44, 26, 17, 0.15);
+    border: 1px solid #cbb89d;
     text-align: center;
-    padding: 15px 0;
-    margin-top: 50px;
-    font-size: 0.9rem;
+}
+
+.collaboration h2 {
+    color: #3b2a20;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.collaboration p {
+    color: #5a4a3b;
+    max-width: 400px;
+    margin: 0 auto 1rem;
+    line-height: 1.5;
+}
+
+.collab-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.collab-form label {
+    font-weight: bold;
+    color: #3b2a20;
+    align-self: flex-start;
+}
+
+.collab-form input {
+    width: 100%;
+    max-width: 300px;
+    padding: 0.6rem 1rem;
+    border: 1px solid #cbb89d;
+    border-radius: 8px;
+    background: #f9f7f3;
+    font-size: 1rem;
+    color: #2e2b29;
+    transition: box-shadow 0.2s ease;
+}
+
+.collab-form input:focus {
+    outline: none;
+    box-shadow: 0 0 4px rgba(107, 66, 38, 0.3);
+}
+
+.collab-form button {
+    background-color: #6b4226;
+    color: #fffdf9;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.collab-form button:hover {
+    background-color: #3b2a20;
+}
+
+.locations-map {
+    flex: 2 1 500px;
+    height: 450px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(44, 26, 17, 0.2);
+    border: 1px solid #cbb89d;
+    margin: 2rem;
+}
+
+a {
+    color: #6b4226;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #3b2a20;
+    text-decoration: underline;
+}
+
+footer, .footer {
+    text-align: center;
+    background-color: #2c1a11;
+    color: #f3eee8;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    letter-spacing: 0.5px;
     border-top: 2px solid #d4a373;
+    font-size: 0.9rem;
 }
 
 @media (max-width: 768px) {
@@ -109,5 +243,18 @@ footer {
     .nav-links {
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    .contacts-section {
+        flex-direction: column;
+    }
+
+    .contacts-right .collaboration,
+    .contacts-left {
+        width: 100%;
+    }
+
+    .locations-map {
+        height: 300px;
     }
 }
