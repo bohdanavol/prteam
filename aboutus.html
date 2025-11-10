@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Про нас | Aroma</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #1b1a17;
+      color: #f3e9dc;
+    }
+
+    header {
+      background-color: #2e1f18;
+      padding: 15px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 90%;
+      margin: auto;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      color: #d4a373;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links a {
+      color: #f3e9dc;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: #d4a373;
+      border-bottom: 2px solid #d4a373;
+    }
+
+    .about-section {
+      width: 90%;
+      margin: 40px auto;
+      text-align: center;
+    }
+
+    .about-section h1 {
+      color: #d4a373;
+      margin-bottom: 30px;
+    }
+
+    .about-content {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      background-color: #2e1f18;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    }
+
+    .about-image {
+      width: 400px;
+      max-width: 100%;
+      border-radius: 10px;
+      border: 2px solid #d4a373;
+      box-shadow: 0 0 10px rgba(212, 163, 115, 0.4);
+    }
+
+    .about-text {
+      max-width: 600px;
+      text-align: left;
+      line-height: 1.6;
+      font-size: 1.1rem;
+    }
+
+    /* Галерея */
+    .gallery {
+      margin-top: 60px;
+    }
+
+    .gallery h2 {
+      color: #d4a373;
+      margin-bottom: 25px;
+    }
+
+    .gallery-photos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .gallery-photos img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 2px solid #d4a373;
+      box-shadow: 0 0 10px rgba(212, 163, 115, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-photos img:hover {
+      transform: scale(1.05);
+    }
+
+    .gallery p {
+      max-width: 800px;
+      margin: 25px auto 0;
+      font-size: 1rem;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    /* Відео */
+    .video-section {
+      margin-top: 60px;
+    }
+
+    .video-section h2 {
+      color: #d4a373;
+      margin-bottom: 20px;
+    }
+
+    .video-wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      border: 2px solid #d4a373;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 12px rgba(212, 163, 115, 0.4);
+    }
+
+    .video-wrapper iframe, 
+    .video-wrapper video {
+      width: 100%;
+      height: 450px;
+      border: none;
+      display: block;
+    }
+
+    .video-section p {
+      max-width: 750px;
+      margin: 20px auto;
+      line-height: 1.6;
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #2e1f18;
+      color: #f3e9dc;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 50px;
+      border-top: 2px solid #d4a373;
+    }
+
+    @media (max-width: 768px) {
+      .about-content {
+        flex-direction: column;
+      }
+      .about-text {
+        text-align: center;
+      }
+      .gallery-photos img {
+        width: 90%;
+      }
+      .video-wrapper iframe,
+      .video-wrapper video {
+        height: 250px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">☕ Aroma</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Головна</a></li>
+        <li><a href="menu.html">Меню</a></li>
+        <li><a href="about.html" class="active">Про нас</a></li>
+        <li><a href="location.html">Локація</a></li>
+        <li><a href="contacts.html">Контакти</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="about-section">
+    <h1>Про кав’ярню Aroma</h1>
+
+    <div class="about-content">
+      <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=800&q=80"
+           alt="Ароматний американо з молоком" class="about-image">
+
+      <div class="about-text">
+        <p><strong>Aroma</strong> — це більше, ніж просто кав’ярня. Це місце, де аромат свіжозмеленої кави поєднується з теплом людського спілкування. Ми відкрилися у 2018 році, щоб створити простір для тих, хто цінує справжній смак, спокій і атмосферу затишку.</p>
+        <p>Наша команда бариста — справжні майстри своєї справи. Вони знають, як кожне зерно кави має свій характер і аромат. Ми співпрацюємо з малими фермерськими господарствами з Бразилії, Колумбії та Ефіопії, щоб забезпечити найвищу якість зерна.</p>
+        <p>Інтер’єр нашої кав’ярні створений у скандинавському стилі: натуральне дерево, м’яке світло, зелень та спокійна музика. Це ідеальне місце для роботи, відпочинку чи зустрічі з друзями.</p>
+        <p><em>“Aroma — це не просто кава, це емоція.”</em></p>
+      </div>
+    </div>
+
+    <!-- Галерея -->
+    <section class="gallery">
+      <h2>Дизайн нашої кав’ярні</h2>
+      <div class="gallery-photos">
+        <!-- Заміна першого фото -->
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80" alt="Інтер'єр кав'ярні Aroma 1">
+        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80" alt="Інтер'єр кав'ярні Aroma 2">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" alt="Інтер'єр кав'ярні Aroma 3">
+      </div>
+
+      <p>Наш інтер’єр створено для того, щоб кожен відвідувач почувався комфортно. Ми використовуємо тепле освітлення, природні матеріали та легку фонову музику, щоб подарувати спокій після насиченого дня.</p>
+      <p>У <strong>Aroma</strong> ми віримо, що кожна деталь — від запаху кави до вигляду столів — створює настрій. Тому ми постійно вдосконалюємо наш простір, аби гості відчували, що це місце створено саме для них.</p>
+      <p>Ми хочемо, щоб відвідування нашої кав’ярні стало маленьким ритуалом радості, де кожен ковток кави нагадує про спокій і гармонію.</p>
+    </section>
+
+    <!-- Відео -->
+    <section class="video-section">
+      <h2>Відео-огляд кав’ярні Aroma</h2>
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/FHhF_2g4S8o?autoplay=1&mute=1&loop=1&playlist=FHhF_2g4S8o" allowfullscreen></iframe>
+      </div>
+      <p>Запрошуємо тебе зазирнути всередину <strong>Aroma</strong> — відчути атмосферу, побачити усмішки бариста, світло, дерев’яні стіни та запах свіжозмеленої кави, який ми так любимо.  
+      Це місце, де день починається зі смаку і тепла.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Aroma. Усі права захищені.</p>
+  </footer>
+</body>
+</html>
